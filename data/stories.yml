@@ -1,0 +1,15 @@
+version: "2.0"
+stories:
+- story: Story from Conversation ID a7d19cd6b42d46ad94cf191a0927e4eb
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_iamabot
+- story: Story from Conversation ID 5c640933a41f498ba8b4aacc3ea30f4e
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: greet
