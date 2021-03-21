@@ -1,0 +1,204 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - I am off
+    - see you later alligator 
+    - we will speak soon
+
+
+- intent: inform
+  examples: |
+    - [Sitka] (location)
+    - [Jeneau] (location)
+    - [Virginia] (location)
+    - [Cusseta] (location)
+    - [Chicago] (location)
+    - [Tuscon] (location)
+    - [Columbus] (location)
+    - [San Franciso] (location)
+    - [California] (location)
+    - [Tulsa] (location)
+    - [Colorado] (location)
+    - [Goodyear] (location)
+    - [Norman] (location)
+    - [Tampa] (location)
+    - [Athens] (location)
+    - [Salt] (location)
+    - [Jackson] (location)
+    - [Waco] (location)
+    - [Katy] (location)
+    - [Clarksville] (location)
+    - [Durham] (location)
+    - [Reno] (location)
+    - [San Diego] (location)
+    - [Knoxville] (location)
+    - [Springfield] (location)
+    - [Santa Cruz] (location)
+    - [Atlanta] (location)
+    - [Nashville] (location)
+    - [Sacramento] (location)
+    - [Boston] (location)
+    - [home health agency] (facility_type)
+    - [hospital] (facility_type)
+    - [nursing home] (facility_type)
+    - a [home health agency] (facility_type)
+    - a [hospital] (facility_type)
+    - a [nursing home] (facility_type)
+
+
+- intent: search_provider
+  examples: |
+    - I need a [hospital] (facility_type)
+    - find me a nearby [hospital] (facility_type)
+    - show me [home health agencies] (facility_type)
+    - [hospital] (facility_type)
+    - find me a nearby [hospital] (facility_type) in [San Francisco] (location)
+    - show me [home health agency] (facility_type)
+    - [home health agency] (facility_type)
+    - find me a nearby [healty agency] (facility_type) my zip code is [10119] (location)
+    - find me a nearby [nursing home] (facility_type)
+    - show me [nusing home] (facility_type)
+    - [nusing home] (facility_type)
+    - show me [nusing home] (facility_type)
+    - find me a nearby [nursing home] (facility_type) my zip code is [10119] (location)
+    - I need a [hospital] (facility_type) my zip code is [77494] (location)
+    - my zip code is [30277] (location) and i need a [nursing home] (facility_type)
+    - my zip code is [86602] (location) and i need a [hospital] (facility_type)
+    - my zip code is [47516] (location) and i need a [home health agency] (facility_type)
+    - i need a [nursing home] (facility_type) at [77474] (location)
+    - i need a [hospital] (facility_type) at [77474] (location)
+    - i need a [home health agency] (facility_type) at [77474] (location)
+    - i am in [Amarillo] (location) and i need a [nursing home] (facility_type)
+    - i am in [New York] (location) and i need a [hospital] (facility_type)
+    - i am in [Las Vegas] (location) and i need a [home health agency] (facility_type)
+    - i need a [nursing home] (facility_type) in [Katy] (location)
+    - i need a [hospital] (facility_type) in [Waco] (location)
+    - i need a [home health agency] (facility_type) in [Clarksville] (location)
+    - show me [nursing home] (facility_type) in [Knoxville] (location)
+    - show me [hospital] (facility_type) in [Durham] (location)
+    - show me [home health agency] (facility_type) in [Reno] (location)
+    - find me a nearby [home health agency] (facility_type) in [Reno] (location)
+    - hi i am in [Tampa] (location) i need a [nursing home] (facility_type:b27b-2uc7)
+    - hi i am in [San Diego] (location) i need a [nursing home] (facility_type:b27b-2uc7)
+    - hi i am in [Nashville] (location) i need a [hospital] (facility_type:rbry-mqwu)
+    - hi i am in [Sacramento] (location) i need a [home health agency] (facility_type:9wzi-peqs)
+    - hi i am in [Springfield] (location) i need a [nursing home] (facility_type:b27b-2uc7)
+    - hi i am in [Atlanta] (location) i need a [hospital] (facility_type:rbry-mqwu)
+    - hi i am in [Chicago] (location) i need a [home health agency] (facility_type:9wzi-peqs)
+    - hi i am in [Santa Cruz] (location) i need a [hospital] (facility_type:b27b-2uc7)
+    - hi i am in [Boston] (location) i need a [home health agency] (facility_type:rbry-mqwu)
+    - hi i am in [Tampa] (location) i need a [nursing home] (facility_type:b27b-2uc7) 
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - not today
+    - no thanks 
+    - no thank you
+    - uh no
+    - noope
+    - do you have something else
+    - no this does not work for me
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- regex: location
+  examples: |
+    - [0-9] {5}
+
+- synonym: xubh-q36u
+  examples: |
+    - hospital
+    - hospitals 
+
+- synonym: 9wzi-peqs
+  examples: |
+    - home health agency
+    - home health agencies  
+
+- synonym: b27b-2uc7
+  examples: |
+    - nursong home
+    - nursing homes
